@@ -1,12 +1,19 @@
 # 🐍 Classic Snake Game
 
-A terminal-based Snake game built in C++ with difficulty levels, real-time keyboard controls, score tracking, and a high score system.
+A terminal-based Snake game built in **C++** with difficulty levels, real-time keyboard controls, score tracking, and a persistent high score system — all rendered in the Windows console.
 
 ---
 
-## 📸 Preview
+## 📸 Screenshots
 
-> *(Add a screenshot or GIF of the game running in your terminal here)*
+### Difficulty Selection
+![Difficulty Selection](photos/photo_2_2023-02-25_21-20-48.jpg)
+
+### Gameplay
+![Gameplay](photos/photo_1_2023-02-25_21-20-48.jpg)
+
+### Game Over Screen
+![Game Over](photos/photo_3_2023-02-25_21-20-48.jpg)
 
 ---
 
@@ -62,11 +69,11 @@ Or open `new snake.layout` directly in **Dev-C++** and hit Run.
 
 ```
 Classic-Snake-Game/
-├── main.cpp            # Core game logic
-├── new snake.cpp       # Alternate/dev version
-├── new snake.depend    # Dev-C++ dependency file
-├── new snake.layout    # Dev-C++ project layout
-└── photos/             # Screenshots of the game
+├── main.cpp                        # Core game logic
+├── new snake.cpp                   # Alternate/dev version
+├── new snake.depend                # Dev-C++ dependency file
+├── new snake.layout                # Dev-C++ project layout
+└── photos/                         # Screenshots of the game
 ```
 
 ---
@@ -75,13 +82,15 @@ Classic-Snake-Game/
 
 The game uses a class-based OOP structure in C++:
 
-- `set_value()` — Initializes snake position, food, and score
-- `design()` — Renders the game board to the console each frame
-- `input()` — Captures non-blocking keypresses using `_kbhit()` and `_getch()`
-- `control()` — Updates snake head coordinates based on direction
-- `length()` — Shifts tail segments to follow the head
-- `Score()` — Detects food collision, increments score, and spawns new food
-- `GameOver()` — Displays end screen with final and high score
+| Method | Description |
+|--------|-------------|
+| `set_value()` | Initializes snake position, food, and score |
+| `design()` | Renders the game board to the console each frame |
+| `input()` | Captures non-blocking keypresses via `_kbhit()` and `_getch()` |
+| `control()` | Updates snake head coordinates based on direction |
+| `length()` | Shifts tail segments to follow the head |
+| `Score()` | Detects food collision, increments score, spawns new food |
+| `GameOver()` | Displays end screen with final score and high score |
 
 ---
 
